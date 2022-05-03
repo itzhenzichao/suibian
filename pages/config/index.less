@@ -1,0 +1,61 @@
+.config-option {
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+}
+.contain {
+    border: 1px solid;
+    width: 80vw;
+    height: 45vh;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20rpx;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .config-btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10rpx;
+    }
+    .textarea {
+        min-height: 70%;
+    }
+    .contain-top {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        position: relative;
+        font-size: 40rpx;
+        overflow: auto;
+        margin-bottom: 32rpx;
+        .choose-option {
+            max-width: 250rpx;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 40rpx;
+            border-bottom: 1px solid;
+        }
+        .edit {
+            position: absolute;
+            right: 30rpx;
+            image {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        textarea {
+            width: 100%;
+        }
+    }
+    .start {
+        font-size: 45rpx;
+        border: 2px solid;
+        padding: 6rpx 8rpx;
+        border-radius: 8px;
+        width: 40%;
+    }
+}

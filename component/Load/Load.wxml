@@ -1,0 +1,15 @@
+<view class="loader-container">
+  <view class="loader">
+    <view class="rock">
+      <image class="hj" src="../../assets/img/hj.png" alt=""></image>
+      <image class="yun" src="../../assets/img/yun.png" style="--i:0;" alt=""></image>
+      <image class="yun" src="../../assets/img/yun.png" style="--i:1;" alt=""></image>
+      <image class="yun" src="../../assets/img/yun.png" style="--i:2;" alt=""></image>
+      <image class="yun" src="../../assets/img/yun.png" style="--i:3;" alt=""></image>
+    </view>
+    <text class="t1">
+      <text class="t2">
+      </text>
+    </text>
+  </view>
+</view>

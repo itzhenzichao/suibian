@@ -1,0 +1,50 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.system-page {
+  padding-top: 40rpx;
+}
+.container-btn {
+  padding-top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-btn .use-btn {
+  border: 2px solid;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: auto;
+  border-color: black;
+  background: initial;
+  color: black;
+  font-size: 34rpx;
+}
+.ds-code {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ds-code image {
+  width: 240px;
+  border-radius: 50%;
+}
+.no-like {
+  filter: blur(7px);
+}

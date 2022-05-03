@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+<view class="top">
+  <view class="title">Sui Bian!</view>
+</view>
+  <view class="userinfo">
+    <block>
+    <button  bindtap="getUserProfile"
+       class="userinfo-avatar" style="background-image:url('{{avatarUrl||defaultImg}}')"  hover-class="none" type="default"></button>
+    </block>
+  </view>
+  <view class="contain">
+    <view class="contain-top" class="{{loading?'contain-top':'contain-top default-contain-margin'}}">
+      <view class="choose-option loading" wx:if="{{loading}}">loading</view>
+      <view class="choose-option" wx:else>{{result}}</view>
+      <view class="edit">
+        <image src="../../assets/img/edit.png" bindtap="goConfig"></image>
+      </view>
+    </view>
+    <view class="my-load" wx:if="{{loading}}">
+      <my-load ></my-load>
+    </view>
+    <!-- -->
+    <button class="start" hover-class="none" type="default" bindtap="startRandom" >开始随便</button>
+  </view>
+  <view class="option-list">
+  <text wx:if="{{optionList.length}}"><text class="option-title">选项：</text>{{optionList}}</text>
+  <text wx:else><text class="option-title">选项：</text>空空如也～～～</text>
+  </view>
+</view>

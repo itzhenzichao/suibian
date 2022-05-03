@@ -1,0 +1,156 @@
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate3d(0, 1, 0, -20deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 20deg);
+  }
+}
+@keyframes rotate-before {
+  0%,
+  100% {
+    transform: translate3d(5px, 3px, -10px);
+  }
+  50% {
+    transform: translate3d(-5px, 3px, -10px);
+  }
+}
+@keyframes rotate-after {
+  0%,
+  100% {
+    transform: translate3d(9px, 3px, -10px);
+  }
+  50% {
+    transform: translate3d(-9px, 3px, -10px);
+  }
+}
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.top {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70rpx 0px 50rpx;
+}
+.top .title {
+  position: relative;
+  color: #fff;
+  font-weight: 800;
+  font-size: 100rpx;
+  z-index: 2;
+  animation: 7s rotate ease-in-out infinite;
+}
+.top .title::before,
+.top .title::after {
+  content: 'Sui Bian!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.top .title::before {
+  color: #009cDE;
+  animation: 7s rotate-before ease-in-out infinite;
+}
+.top .title::after {
+  color: #003c71;
+  animation: 7s rotate-after ease-in-out infinite;
+}
+.my-load {
+  margin: 6px 0px;
+}
+.contain {
+  border: 1px solid;
+  width: 60vw;
+  padding-bottom: 40rpx;
+  margin: auto;
+  margin-top: -72rpx;
+  border-radius: 8px;
+  padding-top: 17%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.contain .contain-top {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.contain .contain-top .choose-option {
+  max-width: 250rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 40rpx;
+  border-bottom: 1px solid;
+}
+.contain .contain-top .edit {
+  position: absolute;
+  right: 30rpx;
+  line-height: 1;
+}
+.contain .contain-top .edit image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.contain .default-contain-margin {
+  margin-bottom: 100rpx;
+}
+.contain .start {
+  width: auto;
+  background: initial;
+  font-size: 40rpx;
+  border: 2px solid black;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 54%;
+  font-weight: 400;
+}
+.option-list {
+  margin: auto;
+  text-align: center;
+  width: 80vw;
+  margin-top: 40rpx;
+  overflow: hidden;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  font-size: 36rpx;
+}
+.option-list .option-title {
+  font-weight: 600;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  position: relative;
+  z-index: 5;
+}
+.userinfo button {
+  width: 128rpx!important;
+  height: 128rpx!important;
+  background-size: 100% 100%;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.usermotto {
+  margin-top: 200px;
+}

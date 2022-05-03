@@ -1,0 +1,12 @@
+<view class="container config-option">
+  <view class="contain">
+    <view class="contain-top" bindtap="getFocus">
+        <textarea maxlength="{{maxLength}}" focus="{{focus}}" confirm-type="go"
+        auto-height bindblur="bindTextAreaBlur" bindinput="saveData" placeholder="选项用空格隔开" value="{{option}}"/>
+    </view>
+    <view class="config-btn">
+        <view class="start" bindtap="clear">清空</view>
+        <view class="start" bindtap="save">确定</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/mine/index",
+    "pages/index/index",
+    "pages/config/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffcd00",
+    "navigationBarTitleText": "随便",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#ffffcc"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#ff66cc",
+    "backgroundColor": "#ffffcc",
+    "borderStyle": "black",
+    "list":[
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "icon/tab_user.png",
+        "selectedIconPath": "icon/tab_user_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "sui",
+        "iconPath": "icon/tab_home.png",
+        "selectedIconPath": "icon/tab_home_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
